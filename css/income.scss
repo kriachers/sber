@@ -91,8 +91,14 @@
         }
         
         .income-pictures__img {
-            padding: 15px 14px 6px 27px;
+            padding: 15px 14px 6px 28px;
         }
+    }
+
+    .income-banner__pictures {
+
+         margin-top: 0; 
+        margin-bottom: 0; 
     }
 
     .income__banner {
@@ -138,9 +144,11 @@
         margin-bottom: 36px;
     }
 
-    .income-banner__coin:nth-of-type(1),
+    .income-banner__coin:nth-of-type(1) {
+        width: 50px;
+    }
     .income-banner__coin:nth-of-type(2) {
-        transform: scale(0.7);
+       width: 55px;
     }
 
 
@@ -153,9 +161,13 @@
 
 @media (max-width: 370px) {
 
-    .income-banner__coin:nth-of-type(1),
+    .income-banner__coin:nth-of-type(1) {
+        left: 28px;
+        width: 40px;
+    }
     .income-banner__coin:nth-of-type(2) {
-        transform: scale(0.5);
+        right: 18px;
+       width: 45px;
     }
 
 }
