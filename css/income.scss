@@ -1,0 +1,153 @@
+
+.income {
+    margin-bottom: 106px;
+}
+
+.income__title {
+    margin-bottom: 56px;
+}
+
+.income__banner {
+    background: #2760EC;
+    border-radius: 24px;
+}
+
+.income-banner__content {
+    grid-area: c;
+    margin-top: 40px;
+    margin-left: 48px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.income-content__button {
+    align-self: flex-start;
+}
+
+.income-banner__pictures {
+    grid-area: p;
+    margin-top: 34px;
+    margin-bottom: 23px;
+   
+}
+
+.income-pictures__wrapper {
+    position: relative;
+}
+
+.income-pictures__img {
+    padding-left: 62px;
+}
+
+.income-banner__coin:nth-of-type(1) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.income-banner__coin:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    top: 53px;
+}
+
+.income__banner {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "c  c  c  c c p p p p p  p  p"
+
+}
+
+.income-content__title {
+    margin-bottom: 16px;
+}
+
+.income-content__button {
+    display: inline-block;
+}
+
+
+@media (max-width: 850px) {
+    .income__banner {
+       
+        grid-template-areas:
+            "c"
+            "p";
+            grid-template-columns: 1fr;
+        gap: 36px;
+
+        .income-content__descr {
+            margin-bottom: 24px;
+        }
+        
+        .income-pictures__img {
+            padding: 15px 14px 6px 27px;
+        }
+    }
+
+    .income__banner {
+        padding: 48px 32px;
+        background: #2760EC;
+        border-radius: 24px;
+    }
+    
+    .income-banner__content {
+        display: block;
+        margin: 0;
+    }
+
+    .income-content__text {
+        margin-bottom: 24px;
+    }
+
+    .income-banner__coin:nth-of-type(1) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: unset;
+        
+    }
+    
+    .income-banner__coin:nth-of-type(2) {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        
+    }
+    
+
+
+}
+
+@media (max-width: 500px) {
+    .income__title {
+        margin-bottom: 36px;
+    }
+
+    .income-banner__coin:nth-of-type(1),
+    .income-banner__coin:nth-of-type(2) {
+        transform: scale(0.7);
+    }
+
+
+    .income__banner {
+        padding: 32px 24px;
+        background: #2760EC;
+        border-radius: 24px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .income-banner__coin:nth-of-type(1),
+    .income-banner__coin:nth-of-type(2) {
+        transform: scale(0.5);
+    }
+
+}
