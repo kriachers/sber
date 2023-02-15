@@ -148,6 +148,11 @@ button {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .container {    
+        margin-top: 105px;
+        margin-bottom: 69px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -162,4 +167,9 @@ button {
     h1 {
         font-size: 35px;
     }
+
+    h2 {
+        font-size: 29px;
+    }
+
 }

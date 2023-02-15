@@ -223,6 +223,10 @@ button {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .container {
+    margin-top: 105px;
+    margin-bottom: 69px;
+  }
 }
 @media (max-width: 375px) {
   section {
@@ -233,6 +237,9 @@ button {
 @media (max-width: 350px) {
   h1 {
     font-size: 35px;
+  }
+  h2 {
+    font-size: 29px;
   }
 }
 @font-face {
